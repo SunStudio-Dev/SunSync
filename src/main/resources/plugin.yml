@@ -1,0 +1,15 @@
+name: SunSync
+version: ${project.version}
+main: sunsync.Main
+api-version: '1.21'
+description: Синхронизирует инвентарь, здоровье и голод всех игроков на сервере.
+commands:
+  sunsync:
+    description: SunSync главная команда
+    usage: /sunsync <on|off|protect>
+    permission: sunsync.admin
+    aliases: [ss, sync]
+permissions:
+  sunsync.admin:
+    description: Право что бы использовать команды плагина
+    default: op
